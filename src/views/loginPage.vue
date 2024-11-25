@@ -2,7 +2,7 @@
   <div id="login-container">
     <div id="login">
       <h1>Iniciar Sesión</h1>
-      <img src="@/assets/logo.png" alt="Logo" class="login-image" />
+      <img src="@/assets/logo_login.jpeg" alt="Logo" class="login-image" />
       <form @submit.prevent="login">
         <div class="input-group">
           <label for="username">Usuario:</label>
@@ -31,7 +31,7 @@ export default {
     login() {
       // Lógica de autenticación
       if (this.username === 'admin' && this.password === '1234') {
-        alert('Inicio de sesión exitoso');
+       
         this.$router.push('/home'); // Redirige al HomePage
       } else {
         alert('Credenciales incorrectas');
@@ -55,20 +55,23 @@ export default {
   width: 100%;
   max-width: 400px;
   padding: 20px;
-  background: #fff;
+  background: linear-gradient(45deg, #4caf50, #2196f3);
+  border: #000000 solid;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .login-image {
-  width: 150px;
+  width: 50%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
+  border-radius: 30%;
 }
 
 .input-group {
@@ -86,8 +89,8 @@ button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  color: #000000;
+  border: black solid;
+  border-radius: 6px;
 }
 </style>
