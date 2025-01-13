@@ -93,4 +93,62 @@ button {
   border: black solid;
   border-radius: 6px;
 }
+
+/* Media Queries */
+
+/* Laptop (pantallas anchas) */
+@media (min-width: 1024px) {
+  #login {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .login-image {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  #login {
+    max-width: 400px;
+    padding: 25px;
+  }
+
+  .login-image {
+    width: 50%;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
+
+/* Teléfonos móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+  #login {
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .login-image {
+    width: 60%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
 </style>
